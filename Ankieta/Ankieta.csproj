@@ -7,4 +7,17 @@
         <UseWPF>true</UseWPF>
     </PropertyGroup>
 
+    <ItemGroup>
+      <Folder Include="Resources\" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="Resources\Book.png" />
+      <Resource Include="Resources\Book.png" />
+      <None Remove="Resources\DNA.png" />
+      <Resource Include="Resources\DNA.png" />
+      <None Remove="Resources\movieStrip.png" />
+      <Resource Include="Resources\movieStrip.png" />
+    </ItemGroup>
+
 </Project>
