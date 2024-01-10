@@ -15,41 +15,42 @@
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition/>
+            <ColumnDefinition Width="Auto"/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <Label FontWeight="Bold" FontSize="40">Ankieta </Label>
+        <Label FontWeight="Bold" FontSize="45">Ankieta </Label>
         <StackPanel Grid.Row="1">
             
-            <Label FontSize="20" FontWeight="DemiBold">Podaj Plec</Label>
-            <RadioButton Margin="5">Kobieta</RadioButton>
-            <RadioButton Margin="5">Mezczyzna</RadioButton>
+            <Label FontSize="25" FontWeight="DemiBold">Podaj Plec</Label>
+            <RadioButton FontSize="15" Margin="5">Kobieta</RadioButton>
+            <RadioButton FontSize="15" Margin="5">Mezczyzna</RadioButton>
             </StackPanel>
         <StackPanel Grid.Row="2" >
-            <Label FontSize="20" FontWeight="DemiBold">Wybierz Zainteresowania</Label>
-            <CheckBox>Muzyka</CheckBox>
-            <CheckBox>Komputery</CheckBox>
-            <CheckBox>Film</CheckBox>
-            <CheckBox>Ksiazki</CheckBox>
+            <Label FontSize="25" FontWeight="DemiBold">Wybierz Zainteresowania</Label>
+            <CheckBox FontSize="15" Margin="5">Muzyka</CheckBox>
+            <CheckBox FontSize="15" Margin="5">Komputery</CheckBox>
+            <CheckBox FontSize="15" Margin="5">Film</CheckBox>
+            <CheckBox FontSize="15" Margin="5">Ksiazki</CheckBox>
         </StackPanel>
         <StackPanel Grid.Row="3">
-            <Label FontSize="20" FontWeight="DemiBold">Wybierz Symbol</Label>
+            <Label FontSize="25" FontWeight="DemiBold">Wybierz Symbol</Label>
             <RadioButton Margin="5">
-                <Image Width="35"  Source="../Resources/Book.png"/>
+                <Image Width="75" Margin="5,10" Source="../Resources/Book.png"/>
             </RadioButton>
             <RadioButton Margin="5">
                 
-                <Image Width="35"  Source="../Resources/movieStrip.png"/>
+                <Image Width="75" Margin="5,10"  Source="../Resources/movieStrip.png"/>
             </RadioButton>
             <RadioButton Margin="5">
-                <Image Width="35"  Source="../Resources/DNA.png"/>
+                <Image Width="75" Margin="5,10" Source="../Resources/DNA.png"/>
             </RadioButton>
         </StackPanel>
         <StackPanel Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Right">
             <Label FontWeight="Medium">Menu</Label>
             <Expander  ExpandDirection="Down" HorizontalAlignment="Left" HorizontalContentAlignment="Left">
                 <StackPanel Background="Beige">
-                <Button Content="Information" Click="ButtonInformation_OnClick" Width="70" Margin="5"/>
+                    <Button Content="Name" HorizontalContentAlignment="Center" Click="ButtonName_OnClick" Width="70" Margin="5"/>
+                    <Button Content="Information" Click="ButtonInformation_OnClick" Width="70" Margin="5"/>
                 <Button Content="Exit" Click="ButtonExit_OnClick" Width="70" HorizontalContentAlignment="Center" Margin="5"/>
                 </StackPanel>
             </Expander>

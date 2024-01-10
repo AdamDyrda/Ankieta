@@ -35,5 +35,11 @@ namespace Ankieta
         {
             Environment.Exit(0);
         }
+
+        private void ButtonName_OnClick(object sender, RoutedEventArgs e)
+        {
+            FormWindow objFormWindow = new FormWindow();
+            objFormWindow.Show();
+        }
     }
 }
