@@ -1,0 +1,21 @@
+<Window x:Class="Ankieta.HelpWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:local="clr-namespace:Ankieta"
+        mc:Ignorable="d"
+        Title="HelpWindow" Height="200" Width="400">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="1">
+            
+            <Label FontSize="20" FontWeight="DemiBold" HorizontalAlignment="Center">Informacje</Label>
+            <TextBlock TextAlignment="Center" FontSize="13" Margin="10" Padding="10" x:Name="InformationBlock" TextWrapping="Wrap" Text="Ankieta jest skierowana do studentow i ma na celu sprawdzenie ich zainteresowan."></TextBlock>
+        </StackPanel>
+        <Button Padding="10" Content="Close" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10" Click="CloseButton_OnClick"/>
+    </Grid>
+</Window>
